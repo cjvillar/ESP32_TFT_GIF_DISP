@@ -1,5 +1,4 @@
-# Animated GIF Display 
-## With ESP32-S3/ST7735 TFT 
+# Animated GIF Display With ESP32-S3/ST7735 TFT 
 
 ---
 
@@ -46,25 +45,24 @@ In your `loadGif.ino` file, include the generated header:
 ```
 ---
 
-
+```bash
 ├── bitsExample.c       # Example C file, to demo bit shifting
 ├── code4.gif           # Sample GIF used in the display
 ├── code4.h             # Header file with converted GIF data
 ├── gif_2_c.py          # Python script to convert GIFs into C headers (RGB565)
 ├── loadGif.ino         # Arduino sketch to display the animation
 └── README.md           # This README
-
+```
 
 ## TFT -- ESP32-S3
-    RST    D3
-    CS     D4
-    D/C    D5
-    DIN(MOSI)    D9
-    CLK   D7
-    VCC    vvsb
-    BL     3v3
-    GND    GND
-
+    RST  -  D3
+    CS   -  D4
+    D/C  -  D5
+    DIN(MOSI)  -  D9
+    CLK  -  D7
+    VCC  -  vvsb
+    BL   -  3v3
+    GND  -  GND
 
 # resources
 https://barth-dev.de/online/rgb565-color-picker/
