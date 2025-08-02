@@ -1,7 +1,5 @@
 # Animated GIF Display With ESP32-S3/ST7735 TFT 
 
----
-
 ## Usage
 
 * Will need the following arduino Libs in Arduino IDE:
@@ -27,12 +25,13 @@ TODO: add gif rezising to gif_2_c.py
 Use `gif_2_c.py` to convert your GIF into a `.h` file formatted in RGB565:
 
 ```bash
-python gif_2_c.py YourGif.gif -o YourGif.h -n <frame_sequence_number>
+python gif_2_c.py Gif.gif -o Gif.h -n <frame_sequence_number>
 ```
 
-* `YourGif.gif` — the input animated GIF
-* `YourGif.h` — the output C header file
+* `Gif.gif` — the input animated GIF
+* `Gif.h` — the output C header file
 * `-n` — (optional) sequence number or index if needed for ordering frames
+if multiple frames.
 
 ---
 
@@ -41,7 +40,7 @@ python gif_2_c.py YourGif.gif -o YourGif.h -n <frame_sequence_number>
 In your `loadGif.ino` file, include the generated header:
 
 ```c
-#include "YourGif.h"
+#include "Gif.h"
 ```
 ---
 
