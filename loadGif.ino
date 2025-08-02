@@ -5,8 +5,6 @@
 // image header files  
 // defines image_data#, IMG#_WIDTH, IMG#_HEIGHT, IMG#_NUM_FRAMES
 #include "code4.h"  
-#include "code2.h"  
-#include "code3.h" 
 
 // defines TFT pins on esp32
 #define TFT_CS     4
