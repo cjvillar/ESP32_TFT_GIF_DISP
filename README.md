@@ -3,10 +3,11 @@
 ## Usage
 
 * Will need the following arduino Libs in Arduino IDE:
+```bash
 Adafruit_GFX.h
 Adafruit_ST7735.h
 SPI.h
-
+```
 
 ### 1. Resize Your GIF
 
@@ -15,14 +16,14 @@ For use with a 1.8" TFT display, make sure your GIF is exactly:
 * **Width**: 160 pixels
 * **Height**: 128 pixels
 
-You can resize the GIF using any image editor or online tool before conversion.
-TODO: add gif rezising to gif_2_c.py
+Resize the GIF using any image editor or online tool before conversion.
+**TODO**: add gif rezising to gif_2_c.py
 
 ---
 
 ### 2. Convert the GIF to a C Header
 
-Use `gif_2_c.py` to convert your GIF into a `.h` file formatted in RGB565:
+Use `gif_2_c.py` to convert GIF into a `.h` file formatted in RGB565:
 
 ```bash
 python gif_2_c.py Gif.gif -o Gif.h -n <frame_sequence_number>
@@ -37,7 +38,7 @@ if multiple frames.
 
 ### 3. Include the Header in Your Arduino Sketch
 
-In your `loadGif.ino` file, include the generated header:
+In `loadGif.ino` file, include the generated header:
 
 ```c
 #include "Gif.h"
